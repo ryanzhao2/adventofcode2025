@@ -1,0 +1,1 @@
+{"name":"Local: temp","url":"c:\\Users\\Ryan\\Code\\Other\\AOC2025\\temp.py","tests":[{"id":1765662216616,"input":"123 328  51 64 \n 45 64  387 23 \n  6 98  215 314\n*   +   *   + ","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\Ryan\\Code\\Other\\AOC2025\\temp.py","group":"local","local":true}
