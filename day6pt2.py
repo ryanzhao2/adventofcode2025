@@ -35,7 +35,6 @@ def solve():
 
         arr.append(t2)
 
-    #print(arr)
     empty = set()
     for col in range(len(arr[0])):
         check = False

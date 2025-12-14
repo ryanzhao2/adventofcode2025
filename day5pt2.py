@@ -24,7 +24,6 @@ def solve():
 
     arr.sort()
     ans = [arr[0]]
-    #print(ans)
     for i in range(len(arr)):
         if arr[i][0] <= ans[-1][1]:
             ans[-1][1] = max(arr[i][1], ans[-1][1])

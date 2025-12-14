@@ -34,18 +34,12 @@ def solve():
                             break
                         else:
                             pass
-                            #print(v, v[j:j+i], v[j-i:j])
 
                     if flag == True:
-                        #print(flag, i, v, v[j:j+i], v[j-i:j])
-                        #print(n)
                         if n not in check:
                             ans += n 
                         check.add(n)
     
-    if ans >= 28196420717:
-        print("TOO HIGH")
-
     print(ans)
 
 if __name__ == '__main__':
