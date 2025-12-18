@@ -18,13 +18,12 @@ def solve():
     from the rows of the column
     """
 
-
     t = []
     data = sys.stdin.read().splitlines()
     for line in data:
         t.append(line)
     
-    ops = t[-1].split()[::-1]
+    ops = t[-1].split()
 
 
     arr = []
@@ -50,12 +49,11 @@ def solve():
     ans = 0
     total = []
     check2 = set()
-    for col in range(len(arr[0])-1, -1, -1):
+    for col in range(len(arr[0])):
         s = ""
         for row in range(len(arr)):
             #check if col is empty and we perform op and skip
             if col in empty:
-                #print(total)
                 if ops[ops_count] == "*" and total != []:
                     ans += math.prod(total)
                 elif ops[ops_count] == "+" and total != []:
