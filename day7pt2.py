@@ -22,8 +22,6 @@ def solve():
     def isvalid(r, c):
         return 0 <= r < m and 0 <= c < n
 
-    visited = set()
-
     @cache
     def dp(r, c):
         if not isvalid(r, c):
