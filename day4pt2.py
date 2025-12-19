@@ -38,7 +38,6 @@ def solve():
         return total <= 3
 
 
-    
     ans = 0
     while True:
         pos = []
