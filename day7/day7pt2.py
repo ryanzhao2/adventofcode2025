@@ -22,10 +22,13 @@ def solve():
     def isvalid(r, c):
         return 0 <= r < m and 0 <= c < n
 
-    @cache
+    memo = {}
     def dp(r, c):
         if not isvalid(r, c):
             return 0
+
+        if (r, c) in memo:
+            return memo[(r, c)]
         
         ans = 0
         if grid[r][c] == "S" or grid[r][c] == ".":
@@ -35,6 +38,7 @@ def solve():
             ans += dp(r + 1, c - 1) + 1
             ans += dp(r + 1, c + 1)
         
+        memo[(r, c)] = ans
         return ans
 
     for i in range(n):
